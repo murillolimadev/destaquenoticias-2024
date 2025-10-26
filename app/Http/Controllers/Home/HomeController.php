@@ -37,7 +37,7 @@ class HomeController extends Controller
         $vejatambem = Noticia::inRandomOrder()->limit(10)->get();
         $noticiasrodape = Noticia::inRandomOrder()->limit(3)->get();
         $destaque = Noticia::inRandomOrder()->first();
-        $publicidade = Publicidade::all();
+        $publicidade = Publicidade::latest()->get();
         $maranhao = Noticia::where('cat_id', '=', 2)->latest()->take(4)->get();
 
         return view('home.pages.index', compact('cidades', 'noticias3', 'classificados', 'noticias6', 'brasil', 'esporte', 'random', 'categorias', 'vejatambem', 'noticiasrodape', 'destaque', 'publicidade', 'maranhao'));

@@ -114,8 +114,11 @@
                     </li>
                     <li><a href="{{ route('home.pages.contatos.index') }}">Fale conosco</a></li>
                 </ul>
-                <p>&copy; Copyright Destaque Noticias - {{ date('Y') }}<a href="#" class="go-top"><i
-                            class="fa fa-caret-up" aria-hidden="true"></i></a></p>
+                <p>&copy; Copyright Destaque Noticias - {{ date('Y') }}
+                    <a href="#" class="go-top">
+                        <i class="fa fa-caret-up" aria-hidden="true"></i>
+                    </a>
+                </p>
             </div>
 
         </div>
@@ -205,9 +208,3 @@
             </div>
         </div>
     </div>
-
-    <!-- Back to Top -->
-    <a href="https://wa.me/5599981310800" class="back-to-top">
-        {{-- divulgar --}}
-        <img src="{{ asset('home/img/avatar.ico') }}" style="width: 100px" class="divulgar" alt="">
-    </a>
