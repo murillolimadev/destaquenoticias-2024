@@ -29,15 +29,11 @@
 } */
 
 .back-to-top {
-    background-color: rgba(0, 0, 0, .3);
-    color: #F2FFFC;
-    clear: both;
     position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 1em;
+    display: none;
+    right: 45px;
+    bottom: 45px;
+    z-index: 99;
 }
 
 .rifa a {
