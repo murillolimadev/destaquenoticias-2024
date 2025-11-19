@@ -70,13 +70,15 @@
                 </li>
                 <li class="nav-item">
                     <a href="{{ route('admin.pages.noticias.index') }}" class="nav-link">
-                        <i class="nav-icon fas fa-edit"></i>
+                        <i class="nav-icon fas fa-copy"></i>
                         <p>
                             Notícias
-                            {{-- <span class="right badge badge-danger">{{ count($totalnews) }}</span> --}}
+                            {{-- <i class="fas fa-angle-left right"></i> --}}
+                            <span class="badge badge-info right">{{count($news)}}</span>
                         </p>
                     </a>
                 </li>
+
                 <li class="nav-item">
                     <a href="{{ route('admin.pages.publicidade.index') }}" class="nav-link">
                         <i class="nav-icon fas fa-file"></i>
@@ -96,7 +98,7 @@
                 <li class="nav-item">
                     <a href="{{ route('admin.pages.parceiros.index') }}" class="nav-link">
                         {{-- <i class="nav-icon fas fa-urses"></i> --}}
-                        <i class="nav-icon fas fa-user"></i>
+                        <i class="nav-icon fas fa-users"></i>
                         <p>
                             Parceiros
                         </p>
@@ -116,7 +118,8 @@
                 <li class="nav-item">
                     <form action="{{ route('logout') }}" method="post">
                         @csrf
-                        <button type="submit" class="btn btn-block btn-dark btn-sm" btn-xs" btn-dark btn-xs">Sair</button>
+                        <button type="submit" class="btn btn-block btn-dark btn-sm" btn-xs" btn-dark
+                            btn-xs">Sair</button>
                     </form>
                     </a>
                 </li>

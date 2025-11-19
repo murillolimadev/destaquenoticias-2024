@@ -25,7 +25,8 @@ class NoticiaController extends Controller
     {
         $noticias = Noticia::latest()->paginate(20);
         $totalnews = Noticia::latest();
-        return view('admin.pages.noticias.index', compact(['noticias', 'totalnews']));
+        $news = Noticia::all();
+        return view('admin.pages.noticias.index', compact(['noticias', 'totalnews','news']));
     }
 
     public function categoria($slug)
