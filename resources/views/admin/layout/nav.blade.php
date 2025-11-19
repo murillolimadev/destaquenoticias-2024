@@ -73,8 +73,7 @@
                         <i class="nav-icon fas fa-copy"></i>
                         <p>
                             Notícias
-                            {{-- <i class="fas fa-angle-left right"></i> --}}
-                            <span class="badge badge-info right">{{count($news)}}</span>
+                            <span class="badge badge-default right">{{count($news)}}</span>
                         </p>
                     </a>
                 </li>
