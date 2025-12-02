@@ -35,7 +35,7 @@ class RifaController extends Controller
         $rifa = Noticia::all();
         $parceiros = Parceiro::latest()->get();
 
-        return view('home.pages.rifas.index', compact('rifa', 'parceiros', 'cidades', 'noticias3', 'classificados', 'noticias6', 'brasil', 'esporte', 'random', 'categorias', 'vejatambem', 'noticiasrodape', 'destaque', 'publicidade', 'maranhao'));
+        return view('admin.pages.rifas.index', compact('rifa', 'parceiros', 'cidades', 'noticias3', 'classificados', 'noticias6', 'brasil', 'esporte', 'random', 'categorias', 'vejatambem', 'noticiasrodape', 'destaque', 'publicidade', 'maranhao'));
     }
 
     /**

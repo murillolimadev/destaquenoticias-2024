@@ -11,7 +11,6 @@ use App\Http\Controllers\ClassificadoController;
 use App\Http\Controllers\DenunciaController;
 use App\Http\Controllers\DepoimentoController;
 use App\Http\Controllers\Home\HomeController;
-use App\Http\Controllers\Home\ParceiroController;
 use App\Http\Controllers\InformativoController;
 use App\Http\Controllers\NoticiaController;
 use App\Http\Controllers\ProfileController;
@@ -155,7 +154,7 @@ Route::middleware('auth')->group(function () {
 
     //rifa
     Route::get('admin/rifas', [RifaController::class, 'index'])->name('admin.pages.rifa.index');
-    Route::post('admin/rifa/store', [RifaController::class, 'store'])->name('admin.pages.rifa.store');
+    // Route::post('admin/rifa/store', [RifaController::class, 'store'])->name('admin.pages.rifa.store');
 
     //parceiro
     Route::get('admin/parceiros', [ParceirosController::class, 'index'])->name('admin.pages.parceiros.index');
