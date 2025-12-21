@@ -73,7 +73,7 @@
                         <i class="nav-icon fas fa-copy"></i>
                         <p>
                             Notícias
-                            <span class="badge badge-default right">{{count($news)}}</span>
+                            {{-- <span class="badge badge-default right">{{count($news)}}</span> --}}
                         </p>
                     </a>
                 </li>
@@ -103,16 +103,7 @@
                         </p>
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a href="{{ route('admin.pages.rifa.index') }}" class="nav-link">
-                        {{-- <i class="nav-icon fas fa-urses"></i> --}}
-                        <i class="nav-icon fas fa-file"></i>
-                        <p>
-                            Rifas
-                        </p>
-                    </a>
-                </li>
-
+               
                 {{-- @endif --}}
                 <li class="nav-item">
                     <form action="{{ route('logout') }}" method="post">

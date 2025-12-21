@@ -59,7 +59,7 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        @foreach ($data as $item)
+                                        @foreach ($parceiros as $item)
                                             <tr>
                                                 <td>{{ $item->title }}</td>
                                                 <td>{{ $item->num }}</td>

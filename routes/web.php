@@ -154,7 +154,7 @@ Route::middleware('auth')->group(function () {
 
     //rifa
     Route::get('admin/rifas', [RifaController::class, 'index'])->name('admin.pages.rifa.index');
-    // Route::post('admin/rifa/store', [RifaController::class, 'store'])->name('admin.pages.rifa.store');
+    Route::post('admin/rifa/store', [RifaController::class, 'store'])->name('admin.pages.rifa.store');
 
     //parceiro
     Route::get('admin/parceiros', [ParceirosController::class, 'index'])->name('admin.pages.parceiros.index');
