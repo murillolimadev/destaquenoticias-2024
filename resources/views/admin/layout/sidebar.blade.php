@@ -40,11 +40,11 @@
                                  </a>
                              </li>
                              <li class="nav-item">
-                                <a href="{{ route('admin.pages.arquivos.index') }}" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Arquivos digitais</p>
-                                </a>
-                            </li>
+                                 <a href="{{ route('admin.pages.arquivos.index') }}" class="nav-link">
+                                     <i class="far fa-circle nav-icon"></i>
+                                     <p>Arquivos digitais</p>
+                                 </a>
+                             </li>
                              <li class="nav-item">
                                  <a href="{{ route('admin.pages.mensagem.index') }}" class="nav-link">
                                      <i class="far fa-circle nav-icon"></i>
@@ -52,11 +52,11 @@
                                  </a>
                              </li>
                              <li class="nav-item">
-                                <a href="{{ route('admin.pages.carteira.index') }}" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Carteira de sócio</p>
-                                </a>
-                            </li>
+                                 <a href="{{ route('admin.pages.carteira.index') }}" class="nav-link">
+                                     <i class="far fa-circle nav-icon"></i>
+                                     <p>Carteira de sócio</p>
+                                 </a>
+                             </li>
 
                              <form action="{{ route('logout') }}" method="post">
                                  @csrf
@@ -87,15 +87,16 @@
                              <li class="nav-item">
                                  <a href="{{ route('admn.pages.noticias.index') }}" class="nav-link">
                                      <i class="far fa-circle nav-icon"></i>
-                                     <p>Notícias</p>
+
+
                                  </a>
                              </li>
                              <li class="nav-item">
-                                <a href="{{ route('admin.pages.congresso.index') }}" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
-                                    <p>Assembleia</p>
-                                </a>
-                            </li>
+                                 <a href="{{ route('admin.pages.congresso.index') }}" class="nav-link">
+                                     <i class="far fa-circle nav-icon"></i>
+                                     <p>Assembleia</p>
+                                 </a>
+                             </li>
                              <li class="nav-item">
                                  <a href="{{ route('admin.pages.reunioes.index') }}" class="nav-link">
                                      <i class="far fa-circle nav-icon"></i>
@@ -113,13 +114,13 @@
 
                      <li class="nav-header">SERVIDORES</li>
                      <li class="nav-item">
-                        <a href="{{ route('admin.pages.servidores.create') }}" class="nav-link">
-                            <i class="nav-icon far fa-circle"></i>
-                            <p>
-                                Cadastrar
-                            </p>
-                        </a>
-                    </li>
+                         <a href="{{ route('admin.pages.servidores.create') }}" class="nav-link">
+                             <i class="nav-icon far fa-circle"></i>
+                             <p>
+                                 Cadastrar
+                             </p>
+                         </a>
+                     </li>
                      <li class="nav-item">
                          <a href="{{ route('admin.pages.users.index') }}" class="nav-link">
                              <i class="nav-icon far fa-circle"></i>
