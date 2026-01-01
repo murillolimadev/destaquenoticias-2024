@@ -70,7 +70,7 @@
                          <div class="mega-posts-menu">
                              <div class="posts-line">
                                  <ul class="filter-list">
-                                     <li><a href="#">Vizualizar todas</a></li>
+                                     <li><a href="https://destaquenoticias.com/cidade/brasil">Vizualizar todas</a></li>
                                  </ul>
                                  <div class="row">
                                      @foreach ($brasil as $item)
@@ -108,7 +108,7 @@
                          <div class="mega-posts-menu">
                              <div class="posts-line">
                                  <ul class="filter-list">
-                                     <li><a href="#">Visualizar todas</a></li>
+                                     <li><a href="https://destaquenoticias.com/cidade/esporte">Visualizar todas</a></li>
                                  </ul>
                                  <div class="row">
                                      @foreach ($esporte as $item)
