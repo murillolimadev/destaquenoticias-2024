@@ -145,6 +145,9 @@
                              <i class="fa fa-angle-down" aria-hidden="true"></i></a>
                          <div class="mega-posts-menu">
                              <div class="posts-line">
+                                <ul class="filter-list">
+                                     <li><a href="https://destaquenoticias.com/cidade/maranhao">Visualizar todas</a></li>
+                                 </ul>
                                  <div class="row">
                                      @foreach ($maranhao as $item)
                                          <div class="col-lg-3 col-md-6">
