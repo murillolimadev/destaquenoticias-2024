@@ -19,6 +19,7 @@ return array(
     'AdinanCenci\\Climatempo\\Wrapper' => $vendorDir . '/adinan-cenci/climatempo-api/src/Wrapper.php',
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
+    'App\\Http\\Controllers\\Admin\\HomeController' => $baseDir . '/app/Http/Controllers/Admin/HomeController.php',
     'App\\Http\\Controllers\\Admin\\ParceirosController' => $baseDir . '/app/Http/Controllers/Admin/ParceirosController.php',
     'App\\Http\\Controllers\\AppController' => $baseDir . '/app/Http/Controllers/AppController.php',
     'App\\Http\\Controllers\\Auth\\AuthenticatedSessionController' => $baseDir . '/app/Http/Controllers/Auth/AuthenticatedSessionController.php',

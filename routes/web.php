@@ -90,7 +90,7 @@ Route::get('/dashboard', function () {
     $totalnews = Noticia::all();
     $news = Noticia::all();
     $total = count(Noticia::all());
-    return view('admin.pages.index',  compact('totalnews','news', 'total'));
+    return view('admin.pages.noticias.index',  compact('totalnews','news', 'total'));
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {

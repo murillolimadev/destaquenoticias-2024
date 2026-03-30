@@ -573,6 +573,7 @@ class ComposerStaticInitb0c49d47f4cfa2ae996c2717f87c58a2
         'AdinanCenci\\Climatempo\\Wrapper' => __DIR__ . '/..' . '/adinan-cenci/climatempo-api/src/Wrapper.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
+        'App\\Http\\Controllers\\Admin\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/HomeController.php',
         'App\\Http\\Controllers\\Admin\\ParceirosController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/ParceirosController.php',
         'App\\Http\\Controllers\\AppController' => __DIR__ . '/../..' . '/app/Http/Controllers/AppController.php',
         'App\\Http\\Controllers\\Auth\\AuthenticatedSessionController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/AuthenticatedSessionController.php',
