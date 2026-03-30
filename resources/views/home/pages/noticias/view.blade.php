@@ -1,12 +1,10 @@
 @extends('home.layout.app')
 @section('title', $data->title)
-{{-- matas tags wt --}}
-<meta property="og:site_name" content="Destaque notícias">
-<meta property="og:title" content="{{ $data->title ?? '' }}">
-<meta property="og:description" content="{{ $data->desc ?? '' }}">
-<meta property="og:type" content="website">
-<meta property="og:image" content="https://www.destaquenoticias.com/upload/noticias/{{ $data->img }}">
-
+{{-- matas tags wt novo --}}
+<meta property="og:description" content="{{ $data->desc }}" />
+<meta property="og:image" content="https://destaquenoticias.com/upload/noticias/{{ $data->img }}" />
+{{-- <meta property="og:url" content="https://www.destaquenoticias.com/upload/noticias/{{ $data->slug }}" /> --}}
+<meta property="og:type" content="article" />
 @section('content')
     <section id="content-section">
         <div class="container">
