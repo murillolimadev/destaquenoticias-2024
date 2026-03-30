@@ -63,7 +63,7 @@ class NoticiaController extends Controller
 
             $destinationPathThumbnail = public_path('upload/noticias');
             $img = Image::read($image->path());
-            $img->resize(800, 400, function ($constraint) {
+            $img->resize(400, 400, function ($constraint) {
                 $constraint->aspectRatio();
             })->save($destinationPathThumbnail . '/' . $imageName);
 
@@ -136,7 +136,8 @@ class NoticiaController extends Controller
 
             $destinationPathThumbnail = public_path('upload/noticias');
             $img = Image::read($image->path());
-            $img->resize(800, 400, function ($constraint) {
+            
+            $img->resize(400, 400, function ($constraint) {
                 $constraint->aspectRatio();
             })->save($destinationPathThumbnail . '/' . $imageName);
 
