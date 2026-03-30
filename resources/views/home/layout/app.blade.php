@@ -20,7 +20,7 @@
 
     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
     <link rel="icon" type="image/png" href="{{ asset('home/images/icon.png') }}" />
-    
+
     <style>
         .theiaStickySidebar:after {
             content: "";
@@ -135,6 +135,7 @@
     <script type="text/javascript" charset="UTF-8" src="http://maps.google.com/maps-api-v3/api/js/57/8b/util.js"></script>
     <title>Destaque notícias - @yield('title')</title>
 
+
     <script>
         //Constrói a URL depois que o DOM estiver pronto
         document.addEventListener("DOMContentLoaded", function() {
@@ -195,25 +196,25 @@
         }, false);
     </script>
 
-<!-- coiar input value -->
- <script>
-    function copiarTexto() {
-    // 1. Seleciona o elemento input pelo seu ID
-    const inputParaCopiar = document.getElementById("meuInput");
+    <!-- coiar input value -->
+    <script>
+        function copiarTexto() {
+            // 1. Seleciona o elemento input pelo seu ID
+            const inputParaCopiar = document.getElementById("meuInput");
 
-    // 2. Obtém o valor do input usando a propriedade .value
-    const textoCopiado = inputParaCopiar.value;
+            // 2. Obtém o valor do input usando a propriedade .value
+            const textoCopiado = inputParaCopiar.value;
 
-    // 3. Usa a API do navegador para copiar o texto para a área de transferência
-    navigator.clipboard.writeText(textoCopiado)
-        .then(() => {
-            alert("QR-Code copiado: " + textoCopiado);
-        })
-        .catch(err => {
-            console.error("Erro ao copiar o texto: ", err);
-        });
-}
- </script>
+            // 3. Usa a API do navegador para copiar o texto para a área de transferência
+            navigator.clipboard.writeText(textoCopiado)
+                .then(() => {
+                    alert("QR-Code copiado: " + textoCopiado);
+                })
+                .catch(err => {
+                    console.error("Erro ao copiar o texto: ", err);
+                });
+        }
+    </script>
     <!-- {{-- SLIDER --}} -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>

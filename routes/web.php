@@ -88,9 +88,10 @@ Route::post('rifa/store', [RifaController::class, 'store'])->name('home.pages.ri
 
 Route::get('/dashboard', function () {
     $totalnews = Noticia::all();
-    $news = Noticia::all();
     $total = count(Noticia::all());
-    return view('admin.pages.noticias.index',  compact('totalnews','news', 'total'));
+    $noticias = Noticia::latest()->paginate(20);
+    // dd($noticias);
+    return view('admin.pages.noticias.index',  compact('totalnews','noticias', 'total'));
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
