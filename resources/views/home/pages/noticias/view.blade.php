@@ -1,12 +1,12 @@
 @extends('home.layout.app')
 @section('title', $data->title)
-<!-- Metatags para WhatsApp (Open Graph) -->
-<meta property="og:site_name" content="Destaque notícias">
-<meta property="og:title" content="{{ $data->title }}" />
-<meta property="og:description" content="{{ $data->desc }}"" />
-<meta property="og:image" content="https://destaquenoticias.com/upload/noticias/{{ $data->img }}" />
-<meta property="og:url" content="https://destaquenoticias.com/noticias/{{ $data->slug }}" />
-<meta property="og:type" content="article" />
+
+<head>
+    <meta property="og:image" content="https://destaquenoticias.com/upload/noticias/{{ $data->img }}" />
+</head>
+
+
+
 @section('content')
     <section id="content-section">
         <div class="container">
