@@ -2,7 +2,11 @@
 @section('title', $data->title)
 
 <head>
+    {{-- whatsapp img --}}
     <meta property="og:image" content="https://destaquenoticias.com/upload/noticias/{{ $data->img }}" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:url" content="https://destaquenoticias.com/upload/noticias/{{ $data->slug }}" />
 </head>
 
 
