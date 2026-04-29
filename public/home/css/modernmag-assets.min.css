@@ -4711,9 +4711,10 @@ tbody.collapse.show {
     padding: .5rem .75rem;
     margin-left: -1px;
     line-height: 1.25;
-    color: #007bff;
+    color: #FFF;
     background-color: #fff;
-    border: 1px solid #ddd
+    border: 1px solid #ddd;
+    background-color: #1865D1;
 }
 
 .page-link:focus,

@@ -192,7 +192,7 @@ a {
 
 .navbar {
     padding: 0;
-    background: #232323 !important;
+    background: #1865D1 !important;
     transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
@@ -242,11 +242,11 @@ header.active .navbar {
 
 .navbar-nav > li:hover > a,
 .navbar-nav > li > a.active {
-    background: #343434;
+    background: #007bff;
 }
 
 .navbar-nav > li.active > a {
-    background: #343434;
+    background: #007bff;
     padding: 21px 25px 18px !important;
 }
 
@@ -404,7 +404,7 @@ header.active .top-line {
     -moz-box-shadow: 0 0 0 transparent;
     -o-box-shadow: 0 0 0 transparent;
     width: 200px;
-    background: #343434;
+    background: #007BFF;
     margin: 0 !important;
 }
 
@@ -3629,7 +3629,7 @@ div.search-box {
     -moz-border-radius: 0px;
     -ms-border-radius: 0px;
     border-radius: 0px;
-    background: #232323;
+    background: #1865D1;
     border: none;
 }
 
@@ -3846,7 +3846,7 @@ body.underconstruction div.social-box ul.social-icons li {
 body.underconstruction div.social-box ul.social-icons li a {
     width: 40px;
     height: 40px;
-    background: #232323;
+    background: #1865D1;
     text-align: center;
     line-height: 40px;
     font-size: 14px;
