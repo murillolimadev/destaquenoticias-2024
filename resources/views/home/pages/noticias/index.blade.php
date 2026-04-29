@@ -39,32 +39,35 @@
                         </div>
                     @endforeach
                 </div>
-                <div class="mt-3">
+                <div class="mt-12" style="text-align: center;">
                     {{ $data->links() }}
                 </div>
+
             </div>
 
-            <!-- End Advertisement -->
+        </div>
 
-            <!-- more from news box -->
-            <div class="more-from-news">
-                <h1>APOIO</h1>
-                <div class="row">
-                    @foreach ($publicidade as $item)
-                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
-                            <div class="news-post thumb-post">
-                                <div class="post-image">
-                                    <a href="#">
-                                        <img src="{{ asset('upload/publicidade/' . $item->img) }}" alt=""
-                                            style="width: 100%; height: 100px;">
-                                    </a>
-                                </div>
+        <!-- End Advertisement -->
+
+        <!-- more from news box -->
+        <div class="more-from-news">
+            <h1>APOIO</h1>
+            <div class="row">
+                @foreach ($publicidade as $item)
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                        <div class="news-post thumb-post">
+                            <div class="post-image">
+                                <a href="#">
+                                    <img src="{{ asset('upload/publicidade/' . $item->img) }}" alt=""
+                                        style="width: 100%; height: 100px;">
+                                </a>
                             </div>
                         </div>
-                    @endforeach
-                </div>
+                    </div>
+                @endforeach
             </div>
-            <!-- end more from news box -->
+        </div>
+        <!-- end more from news box -->
         </div>
     </section>
 @endsection
