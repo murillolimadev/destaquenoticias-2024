@@ -156,7 +156,9 @@
         }, false);
     </script>
 
-    {{-- SLIDER --}}
+    <meta property="og:title" content="Destaque notícias" />
+    <meta property="og:image" content="https://destaquenoticias.com/upload/noticias/{{ $data->img ?? '' }}" />
+    <meta property="og:url" content="https://destaquenoticias.com" />
 </head>
 
 <body>
