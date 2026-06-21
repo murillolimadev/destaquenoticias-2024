@@ -29,6 +29,8 @@ class HomeController extends Controller
         $classificados = Classificado::latest()->get();
         $noticias3 = Noticia::orderby('id', 'DESC')->take(3)->get();
         $noticias6 = Noticia::orderby('id', 'DESC')->skip(3)->take(6)->get();
+        $noticias8 = Noticia::orderby('id', 'DESC')->skip(9)->take(8)->get();
+
         // dd($noticias3);
         $brasil = Noticia::where('cat_id', '=', 6)->orderBy('id', 'DESC')->limit(4)->get();
         $esporte = Noticia::where('cat_id', '=', 5)->take(4)->orderBy('id', 'DESC')->get();
@@ -40,7 +42,7 @@ class HomeController extends Controller
         $publicidade = Publicidade::latest()->get();
         $maranhao = Noticia::where('cat_id', '=', 2)->take(4)->orderBy('id', 'DESC')->get();
 
-        return view('home.pages.index', compact('cidades', 'noticias3', 'classificados', 'noticias6', 'brasil', 'esporte', 'random', 'categorias', 'vejatambem', 'noticiasrodape', 'destaque', 'publicidade', 'maranhao'));
+        return view('home.pages.index', compact('cidades', 'noticias3', 'classificados', 'noticias6', 'noticias8','brasil', 'esporte', 'random', 'categorias', 'vejatambem', 'noticiasrodape', 'destaque', 'publicidade', 'maranhao'));
     }
 
     /**

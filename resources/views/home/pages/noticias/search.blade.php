@@ -1,5 +1,7 @@
 @extends('home.layout.app')
 @section('title', $pesq)
+
+
 @section('content')
     <section id="content-section" style="transform: none;">
         <div class="container" style="transform: none;">

@@ -20,30 +20,8 @@
 
     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
     <link rel="icon" type="image/png" href="{{ asset('home/images/icon.png') }}" />
+    {{-- slider --}}
 
-    <style>
-        .theiaStickySidebar:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-
-        .facebook-share-button {
-            display: inline-block;
-            width: 40px;
-            height: 40px;
-            margin: 5px;
-            background-size: 100% 100%;
-            /* ou 'contain' */
-            background-image: url("[URL-DO-ICONE]");
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-
-        .pagination-list li {
-            padding-top: 5px;
-        }
-    </style>
     {{-- face --}}
     <style>
         .facebook-share-button {
@@ -126,6 +104,11 @@
         }
     </style>
 
+    {{-- slider --}}
+    <style>
+        #wrapper.clearfix .slider-outer .slider-inner .slide.front.active(data-slide="1") .slide-title Slide 1 i(class="fa fa-html5") .slide.top(data-slide="2") .slide-title Slide 2 i(class="fa fa-css3") .slide.back(data-slide="3") .slide-title Slide 3 i(class="fa fa-android") .slide.bottom(data-slide="4") .slide-title Slide 4 i(class="fa fa-mobile-phone") nav#nav.clearfix ul.clearfix li: a(href, class='btn focus', data-slide="1") 1 li: a(href, class='btn', data-slide="2") 2 li: a(href, class='btn', data-slide="3") 3 li: a(href, class='btn', data-slide="4") 4
+    </style>
+    {{-- end slider --}}
     <link type="text/css" rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Google+Sans:400,500,700|Google+Sans+Text:400,500,700&amp;lang=pt">
     <link type="text/css" rel="stylesheet"
@@ -155,10 +138,6 @@
             document.getElementById("whatsapp-share-btt").href = "https://api.whatsapp.com/send?text=" + conteudo;
         }, false);
     </script>
-
-    <meta property="og:title" content="Destaque notícias" />
-    <meta property="og:image" content="https://destaquenoticias.com/upload/noticias/{{ $data->img ?? '' }}" />
-    <meta property="og:url" content="https://destaquenoticias.com" />
 </head>
 
 <body>
@@ -168,8 +147,7 @@
         @yield('content')
         @include('home.layout.footer')
 
-        <a href="https://wa.me/5599981310800" target="_blank"
-            class="wt">
+        <a href="https://wa.me/5599981310800" target="_blank" class="wt">
             {{-- <i class="bi bi-arrow-up"></i> --}}
             <img src="{{ asset('home/images/wt.png') }}" alt="" style="width: 70px; height: 70px;">
         </a>
@@ -225,6 +203,9 @@
     </script>
     <!-- {{-- SLIDER --}} -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    {{-- slider --}}
+    <script></script>
 </body>
 
 </html>

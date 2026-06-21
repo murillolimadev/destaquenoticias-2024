@@ -4,9 +4,7 @@
 @section('content')
     <!-- Slider main container -->
     <div class="wide-news-heading" style="opacity: 1;">
-
         <div class="item main-news">
-
             <div class="flexslider">
                 <ul class="slides">
                     @foreach ($noticias3 as $item)
@@ -33,15 +31,6 @@
                         </li>
                     @endforeach
                 </ul>
-                {{-- <ol class="flex-control-nav flex-control-paging">
-                    <li><a class="">1</a></li>
-                    <li><a class="">2</a></li>
-                    <li><a class="flex-active">3</a></li>
-                </ol>
-                <ul class="flex-direction-nav">
-                    <li><a class="flex-prev" href="#"></a></li>
-                    <li><a class="flex-next" href="#"></a></li>
-                </ul> --}}
             </div>
 
         </div>
@@ -84,7 +73,7 @@
                         </div>
 
                         <div class="row">
-                            @foreach ($noticias6 as $item)
+                            @foreach ($noticias8 as $item)
                                 <div class="col-sm-6">
                                     <div class="news-post standart-post">
                                         <div class="post-image">
