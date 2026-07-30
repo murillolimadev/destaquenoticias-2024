@@ -5,6 +5,7 @@
     <!--<< Required meta tags >>-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="{{ asset('home/images/icon.png') }}">
     <link rel="icon" type="image/png" href="{{ asset('home/images/icon.png') }}" />
 
     {{-- favicon --}}
