@@ -40,7 +40,7 @@
      <div class="header-banner-place">
          <div class="container">
              <a class="navbar-brand" href="/">
-                 <img src="{{ asset('home/images/logo.png') }}" width="200" alt="">
+                 <img src="{{ asset('home/images/logo.png') }}" width="280" alt="">
              </a>
 
              <div class="advertisement" style="float: right;">
