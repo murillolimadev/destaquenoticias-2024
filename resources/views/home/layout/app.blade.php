@@ -148,7 +148,7 @@
         @yield('content')
         @include('home.layout.footer')
 
-        <a href="https://wa.me/5599981310800" target="_blank" class="wt">
+        <a href="https://wa.me/5599981310800" target="_blank" class="wt" style="margin-bottom:20px">
             {{-- <i class="bi bi-arrow-up"></i> --}}
             <img src="{{ asset('home/images/wt.png') }}" alt="" style="width: 70px; height: 70px;">
         </a>
