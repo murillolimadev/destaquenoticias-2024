@@ -23,6 +23,9 @@
     <link rel="icon" type="image/png" href="{{ asset('home/images/icon.png') }}" />
     {{-- slider --}}
 
+    {{-- tags whatsapp --}}
+
+
     {{-- face --}}
     <style>
         .facebook-share-button {
