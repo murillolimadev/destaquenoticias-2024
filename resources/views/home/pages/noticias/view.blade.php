@@ -2,36 +2,12 @@
 @section('title', $data->title)
 
 <head>
-    {{-- whatsapp img --}}
-    <meta property="og:title" content="{{ $data->title }}" />
-    <meta property="og:description" content="{{ $data->desc }}" />
-    <meta property="og:image" content="https://destaquenoticia.com.br/upload/noticias/{{ $data->img }}" />
-    <meta property="og:url" content="https://destaquenoticia.com.br/upload/noticias/{{ $data->slug }}" />
-    <meta property="og:type" content="{{ $data->desc }}" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-
     <!-- Configurações básicas do Open Graph -->
     <meta property="og:site_name" content="Destaque noticias">
     <meta property="og:title" content="{{ $data->title }}">
     <meta property="og:description" content="{{ $data->desc }}">
     <meta property="og:url" content="https://destaquenoticia.com.br/upload/noticias/{{ $data->slug }}">
     <meta property="og:type" content="https://destaquenoticia.com.br/upload/noticias/{{ $data->slug }}">
-
-    <!-- Imagem de Compartilhamento (WhatsApp, Facebook, Twitter/X) -->
-    <meta property="og:image" content="https://destaquenoticias.com.br/upload/noticias/{{ $data->img }}">
-    <meta property="og:image:secure_url" content="https://destaquenoticia.com.br/upload/noticias/{{ $data->slug }}">
-    <meta property="og:image:type" content="https://destaquenoticia.com.br/upload/noticias/{{ $data->slug }}">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-
-    <!-- Open Graph -->
-    <meta property="og:title" content="{{ $data->title }}" />
-    <meta property="og:description" content="{{ $data->desc }}" />
-    <meta property="og:image" content="https://destaquenoticia.com.br/upload/noticias/{{ $data->img }}" />
-    <meta property="og:url" content="https://destaquenoticia.com.br/upload/noticias/{{ $data->slug }}" />
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Destaque noticia" />
 </head>
 @section('content')
     <section id="content-section">
