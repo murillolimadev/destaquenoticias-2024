@@ -24,6 +24,14 @@
     <meta property="og:image:type" content="https://destaquenoticia.com.br/upload/noticias/{{ $data->slug }}">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="{{ $data->title }}" />
+    <meta property="og:description" content="{{ $data->desc }}" />
+    <meta property="og:image" content="https://destaquenoticia.com.br/upload/noticias/{{ $data->img }}" />
+    <meta property="og:url" content="https://destaquenoticia.com.br/upload/noticias/{{ $data->slug }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Destaque noticia" />
 </head>
 @section('content')
     <section id="content-section">
