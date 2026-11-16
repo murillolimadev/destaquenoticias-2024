@@ -18,4 +18,9 @@ class Categoria extends Model
     {
         return $this->belongsTo(Noticia::class, 'cat_id');
     }
+
+    public function news()
+    {
+        return $this->hasMany(Noticia::class, 'cat_id');
+    }
 }

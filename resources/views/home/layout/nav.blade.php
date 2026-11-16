@@ -191,7 +191,7 @@
                          <ul class="dropdown">
                              @foreach ($cidades as $item)
                                  <li><a
-                                         href="{{ route('home.pages.cidade.index', $item->slug) }}">{{ $item->name }}</a>
+                                         href="{{ route('home.pages.cidade.index', $item->slug) }}">{{ $item->name }} - <b>{{ count($item->news) }}</b></a>
                                  </li>
                              @endforeach
                          </ul>
