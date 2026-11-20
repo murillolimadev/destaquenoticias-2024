@@ -1,14 +1,16 @@
 @extends('home.layout.app')
 @section('title', $data->title)
 
-<head>
-    <!-- Configurações básicas do Open Graph -->
-    <meta property="og:site_name" content="Destaque noticias">
-    <meta property="og:title" content="{{ $data->title }}">
-    <meta property="og:description" content="{{ $data->desc }}">
-    <meta property="og:url" content="https://destaquenoticia.com.br/upload/noticias/{{ $data->slug }}">
-    <meta property="og:type" content="https://destaquenoticia.com.br/upload/noticias/{{ $data->slug }}">
-</head>
+{{-- tags whatsapp --}}
+<meta property="og:title" content="{{ $data->title }}">
+<meta property="og:description" content="{{ $data->desc }}">
+<meta property="og:image" content="https://destaquenoticia.com.br/upload/noticias/{{ $data->img }}">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://destaquenoticia.com.br/n/noticias/{{ $data->slug }}">
+<meta property="og:type" content="website">
+
 @section('content')
     <section id="content-section">
         <div class="container">

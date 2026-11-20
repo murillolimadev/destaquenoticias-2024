@@ -23,7 +23,6 @@
     <link rel="icon" type="image/png" href="{{ asset('home/images/icon.png') }}" />
     {{-- slider --}}
 
-    {{-- tags whatsapp --}}
 
 
     {{-- face --}}
@@ -151,7 +150,8 @@
         @yield('content')
         @include('home.layout.footer')
 
-        <a href="https://wa.me/5599981310800?text=Olá...%20gostaria%20de%20um%20atendimento,%20encontrei%20esse%20whatsapp%20no%20site." target="_blank" class="wt" style="margin-bottom:30px">
+        <a href="https://wa.me/5599981310800?text=Olá...%20gostaria%20de%20um%20atendimento,%20encontrei%20esse%20whatsapp%20no%20site."
+            target="_blank" class="wt" style="margin-bottom:30px">
             {{-- <i class="bi bi-arrow-up"></i> --}}
             <img src="{{ asset('home/images/wt.png') }}" alt="" style="width: 70px; height: 70px;">
         </a>
