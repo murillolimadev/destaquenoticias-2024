@@ -1,15 +1,18 @@
 @extends('home.layout.app')
 @section('title', $data->title)
 
-{{-- tags whatsapp --}}
-<meta property="og:title" content="{{ $data->title }}">
-<meta property="og:description" content="{{ $data->desc }}">
-<meta property="og:image" content="https://destaquenoticia.com.br/upload/noticias/{{ $data->img }}">
-<meta property="og:image:type" content="image/png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:url" content="https://destaquenoticia.com.br/n/noticias/{{ $data->slug }}">
-<meta property="og:type" content="website">
+<head>
+    {{-- tags whatsapp --}}
+    <meta property="og:title" content="{{ $data->title }}">
+    <meta property="og:description" content="{{ $data->desc }}">
+    <meta property="og:image" content="https://destaquenoticia.com.br/upload/noticias/{{ $data->img }}">
+    <meta property="og:image:type" content="image/jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="https://destaquenoticia.com.br/n/noticias/{{ $data->slug }}">
+    <meta property="og:type" content="website">
+
+</head>
 
 @section('content')
     <section id="content-section">
